@@ -1,0 +1,27 @@
+img{ 
+    width: 200px;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+a:hover li{
+    border: 3 px solid black;
+}
+
+.on-sale{
+    background-color: yellow;
+}
+
+.on-sale{
+    background-color: blueviolet;
+}
+
+#best-one {
+    background-color: red;
+
+}
+
