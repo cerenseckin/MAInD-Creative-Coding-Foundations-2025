@@ -12,33 +12,25 @@
 <body>
 
     <header>
+      <h1> Song Archive🎵 </h1>
 
-        <aside> 
-            <h1> Song Archive🎵 </h1>
-    
-            <!-- input and add button -->
-             <div id="add-container">
-                 <input type="text" id="song-name" placeholder="Song Title">
-                 <input type="text" id="artist-name" placeholder="Artist">
-                 
-                 <input type="text" id="link" placeholder="Link">
-                 <label for="border-color" id="border-color-text">Pick a border color:</label>
-                 <input type="color" id="border-color" value="#ff00ee">
-                 
+      <!-- input and add button -->
+      <input type="text" id="song-name" class="input-fields" placeholder="Song Title">
+      <input type="text" id="artist-name" class="input-fields" placeholder="Artist">
+      <input type="text" id="link" class="input-fields" placeholder="Link">
+      <label for="border-color" id="border-color-text">Pick a border color:</label>
+      <input type="color" id="border-color" value="#ff00ee">
+      
+      <!-- <label for="album-cover" id="album-cover">Select your cover!</label>
+      <input type="file" id="album-cover" accept="image/gif, image/jpeg, image/png"> -->
+      <button id="add-btn">Remember</button>
+      <button id="erase">Erase All</button>
 
-                 <!-- <label for="album-cover" id="album-cover">Select your cover!</label>
-                 <input type="file" id="album-cover" accept="image/gif, image/jpeg, image/png"> -->
-                 <button id="add-btn">Remember</button>
-                 <button id="erase">Erase All</button>
-             </div>
-    
-            <!-- view list mode toggle, chronological & alphabetical -->
-             <div id="view-toggle-container">
-                <button id="list-view-btn">List</button>
-                <button id="card-view-btn">Card</button>
-             </div>
-        </aside>
-
+      <!-- view list mode toggle, chronological & alphabetical -->
+      <div id="view-toggle-container">
+        <button id="list-view-btn">List</button>
+        <button id="card-view-btn">Card</button>
+      </div>
     </header>
 
     <main>
