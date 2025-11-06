@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+
+    <title>Listen</title>
+</head>
+<body>
+
+    <header>
+
+        <aside> 
+            <h1> Song Archive🎵 </h1>
+    
+            <!-- input and add button -->
+             <div id="add-container">
+                 <input type="text" id="song-name" placeholder="Song Title">
+                 <input type="text" id="artist-name" placeholder="Artist">
+                 
+                 <input type="text" id="link" placeholder="Link">
+                 <label for="border-color" id="border-color-text">Pick a border color:</label>
+                 <input type="color" id="border-color" value="#ff00ee">
+                 
+
+                 <!-- <label for="album-cover" id="album-cover">Select your cover!</label>
+                 <input type="file" id="album-cover" accept="image/gif, image/jpeg, image/png"> -->
+                 <button id="add-btn">Remember</button>
+                 <button id="erase">Erase All</button>
+             </div>
+    
+            <!-- view list mode toggle, chronological & alphabetical -->
+             <div id="view-toggle-container">
+                <button id="list-view-btn">List</button>
+                <button id="card-view-btn">Card</button>
+             </div>
+        </aside>
+
+    </header>
+
+    <main>
+
+        <!-- archive list -->
+         <!-- card-view & list-view -->
+         <ul id="song-list-container" class="list-view"> 
+            
+                <li class="song-list-item">
+                <a href="https://youtu.be/DYGeRCfAO0A?si=BuCeuTAB3fM9iOOz" target="_blank" id="link">
+                    <div class="songname-artist-card">
+                      <!-- <img src="assets/imgs/Wyoming.jpg" alt="Wyoming Album Cover" id="'album-cover"> -->
+                      <h2 class="song-name">Wyoming</h2>
+                      <h3 class="artist-name">Elijah Fox</h3>
+                    </div>
+                    </a>
+                </li>
+            
+                <li class="song-list-item">
+                  <a href="https://youtu.be/Whe7MURlKLw?si=VM6J0bcJ9EfWP265" target="_blank" id="link">
+                    <div class="songname-artist-card">
+                        <!-- <img src="assets/imgs/ab67616d0000b273ff26bd277274b27f249cc638.jpeg" alt="Texas Sun Album Cover" id="'album-cover"> -->
+                        <h2 class="song-name">Texas Sun</h2>
+                        <h3 class="artist-name">Khruangbin & Leon Bridges</h3>
+                    </div>
+                  </a>
+
+                </li>
+           
+                <li class="song-list-item">
+                  <a href="https://youtu.be/2g5xkLqIElU?si=9Z8jUv3MtKb-CRz0" target="_blank" id="link">
+                    <div class="songname-artist-card">
+                      <!-- <img src="assets/imgs/artworks-BB9LTqR4bKXy-0-t1080x1080.jpg" alt="Borderline Album Cover" id="'album-cover"> -->
+                      <h2 class="song-name">Borderline</h2>
+                      <h3 class="artist-name">Tame Impala</h3>
+                    </div>
+                   </a>
+                </li>
+           
+                <li class="song-list-item">
+                  <a href="https://youtu.be/oYLnimjXH3M?si=rVw8rBVlWs_FrhOG" target="_blank" id="link">
+                    <div class="songname-artist-card">
+                      <!-- <img src="assets/imgs/Parcels Tieduprightnow.jpg" alt="Tieduprightnow Album Cover" id="'album-cover"> -->
+                      <h2 class="song-name">Tieduprightnow</h2>
+                      <h3 class="artist-name">Parcels</h3>
+                    </div>
+                  </a>
+                </li>
+          
+                <li class="song-list-item">
+                  <a href="https://youtu.be/E7FU_mqhFGk?si=ZYV9VdeoBVYnVUCS" target="_blank" id="link">
+                    <div class="songname-artist-card">
+                      <!-- <img src="assets/imgs/fa8fc252c067d11e250d5e4c969fb223.gif" alt="Neverender Album Cover" id="'album-cover"> -->
+                      <h2 class="song-name">Neverender</h2>
+                      <h3 class="artist-name">Justice & Tame Impala</h3>
+                    </div>
+                  </a>
+                </li>
+         </ul>
+    </main>
+    <footer>
+    </footer>
+    
+</body>
+</html>

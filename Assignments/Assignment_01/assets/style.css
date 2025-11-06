@@ -1,0 +1,365 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: whitesmoke;
+}
+
+
+h1 {
+  text-align:left;
+  color: rgb(178, 225, 77);
+  padding: 30px 0px;
+  font-size: 30px;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    padding: 0 1 1 1 rem;
+    /* margin-bottom: 1rem; */
+
+    background-color: rgb(93, 93, 154);
+}
+
+button {
+    background-color:solid whitesmoke;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid ;
+    border-radius: 1rem;
+    font-size: 20px;
+    color: rgb(110, 154, 0);
+
+    /* display: block; */
+    /* flex-wrap: wrap; */
+    /* width: auto; */
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    /* padding: rem; */
+}
+
+
+#add-container{
+  gap: 2rem;
+}
+
+
+
+ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: fit-content;
+}
+
+
+
+#add-btn{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color:solid whitesmoke;
+    border-color: white;
+    color:cornflowerblue;
+    border-width: 1px;
+    border-style: solid ;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+#erase{
+  display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color:solid whitesmoke;
+    border-color: white;
+    color:cornflowerblue;
+    background-color: darkslategrey;
+    border-width: 1px;
+    border-style: solid ;
+    border-radius: 1rem;
+    padding: 0.5rem;
+
+}
+
+#erase:hover{
+  background-color: navy;
+}
+
+#add-btn:hover{
+  background-color:rgb(178, 225, 77);
+}
+
+#border-color-text{
+  color:rgb(254, 254, 255);
+}
+
+#view-toggle-container button:hover{
+  background-color:rgb(230, 189, 217);
+  border:solid whitesmoke;
+}
+
+#view-toggle-container{
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  gap: 1rem;
+}
+
+#view-toggle-container button {
+  flex-grow: 1;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+#song-title{
+  width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#link{
+  width: 100%;
+    /* border: 1px solid black; */
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#artist-name{
+  width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#song-name {
+  width: 100%;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#album-cover-label{
+  color: aliceblue;
+}
+
+
+
+main{
+  min-height: 100vh;
+
+  margin-top:0;
+  margin-left: 30%;
+
+  padding: 60px;
+
+  /* background-color: rgb(95, 234, 193); */
+  background-color: solid white;
+}
+
+.card-view li {
+  width: 200px;
+  height: 200px;
+  box-sizing:border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#song-list-container .list-view{
+  /* width: 100%;
+  height: auto; */
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2rem;
+  margin-top:1rem;
+  padding-top: 20px;
+}
+
+#song-list-container .card-view{
+  width: 100%;
+  height: auto;
+
+  
+  /* display: flex;
+  flex-wrap: wrap; */
+
+  display:block;
+
+  gap: 2rem;
+  margin-top:1rem;
+  padding-top: 20px;
+}
+
+
+/* .card-view img{
+  width: 100px;
+  height: auto;
+} */
+
+.card-view a{
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/* list view */
+/* .list-view img{
+  display: none;
+} */
+
+.list-view a{
+   text-decoration: none;
+   /* display: flex;
+   flex-wrap: wrap; */
+
+}
+
+.list-view{
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: block;
+}
+
+
+.card-view .songname-artist-card{
+  border: 2px solid rgb(255, 0, 238);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.list-view .songname-artist-card{
+  border: 3px solid rgb(178, 225, 77);
+  /* border-radius: 1rem; */
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  text-align: left;
+
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.card-view .song-name{
+  color: rgb(72, 107, 172);
+  font-size: 14px;
+}
+
+
+
+.list view .song-name{
+  color: rgb(72, 107, 172);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.artist-name{
+  color:grey;
+  font-size: 14px;
+}
+
+
+.songname-artist-card:hover{
+  color:rgb(82, 148, 151);
+
+  background-color:rgb(203, 203, 222);
+  padding: 10px 20px;
+  /* font-size: 20px; */
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .card-view li {
+         width: calc((100% - 4rem) / 2);
+        box-sizing: border-box; 
+        display: flex;
+    }
+
+  h1 {
+  text-align:left;
+  color: rgb(178, 225, 77);
+  padding: 30px 0px;
+  font-size: 30px;
+}
+
+
+
+
+  aside{
+  background-color: rgb(93, 93, 154);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  padding: 10px;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index:100;
+}
+
+button {
+    background-color:solid whitesmoke;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid ;
+    border-radius: 1rem;
+    font-size: 20px;
+    outline: none;
+    color: rgb(110, 154, 0);
+
+    /* display: block; */
+    /* flex-wrap: wrap; */
+    /* width: auto; */
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+
+    /* padding: rem; */
+}
+
+
+}
