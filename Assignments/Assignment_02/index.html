@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+
+    <title>The Museum: Restore the Paintings</title>
+</head>
+<body>
+    <header>
+        <h1>Müze</h1>
+        
+        <p id="game-intro">Restore the artworks</p>
+        <p id="game-instructions">Use the arrow keys to move the <span id="tiles">tiles</span> (not the empty space😊) and complete the puzzle!</p>
+        <p id="score-container">Moves: <span id="moves">0</span></p>
+    </header>
+
+    <main>
+        <div id="popup-banner" class="setup">
+            <div id="banner-content">
+                <h1 id="banner-header">Müze</h1>
+                <p id="game-instructions">Choose a puzzle</p>
+                <ul id="puzzle-options">
+
+                    <li>
+                      <button class="choose-puzzle-button" id="choose-puzzle-1">
+                        <img src="assets/imgs/1/1_9.jpg" data-puzzle="1">
+                      </button> 
+                    </li>
+
+                    <li>
+                      <button class="choose-puzzle-button" id="choose-puzzle-2">
+                        <img src="assets/imgs/2/2_9.jpg" data-puzzle="2">
+                      </button>
+                    </li>
+
+                    <li>
+                      <button class="choose-puzzle-button" id="choose-puzzle-3">
+                        <img src="assets/imgs/3/3_9.jpg" data-puzzle="3">
+                      </button>
+                    </li>
+                    
+                    <li>
+                      <button class="choose-puzzle-button" id="choose-puzzle-4">
+                        <img src="assets/imgs/4/4_9.jpg" data-puzzle="4">
+                      </button>
+                    </li>
+
+                </ul>
+                <!-- <button id="continue-banner-btn">Continue</button> -->
+            </div>
+        </div>
+
+
+        <ul id="puzzle-container">
+            <li class="tile P" id="0"></li> 
+            <li class="tile A" id="1"></li>
+            <li class="tile B" id="2"></li>
+            <li class="tile C" id="3"></li>
+            <li class="tile D" id="4"></li>
+            <li class="tile E" id="5"></li>
+            <li class="tile F" id="6"></li>
+            <li class="tile G" id="7"></li>
+            <li class="tile H" id="8"></li>
+        </ul>
+
+
+
+      <p id="win-message"></p>
+
+
+
+    </main>
+    
+</body>
+</html>

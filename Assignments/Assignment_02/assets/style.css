@@ -1,0 +1,570 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* The Font Families */
+@font-face {
+    font-family: 'PPNeueBit-Bold';
+    src: url('fonts/PPNeueBit-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair-Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 24px;
+    font-family: 'Playfair-Display';
+    text-align: center;
+    /* background-color:rgb(25, 25, 25); */
+    background-color:rgb(255, 255, 255);
+    color: rgb(134, 154, 125);
+}
+
+/* body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, main {
+    width: 50%;
+  } */
+
+#banner-header{
+    /* position: absolute;
+    top:10px;
+    left:10px; */
+    font-family: 'PPNeueBit-Bold';
+    font-size: 300px;
+    color:rgba(0, 40, 149, 0.338);
+
+}
+
+h1{
+    font-family: 'PPNeueBit-Bold';
+    font-size: 100px;
+    color:rgb(108, 164, 248);
+  
+
+}
+
+#puzzle-blocks{
+    width: 300px;
+    height: 300px;
+    /* background-color:rgb(199, 151, 178); */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    /* gap: 0.5rem; */
+
+    margin: 0 auto;
+}
+
+#win-message{
+
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: greenyellow;
+    text-decoration: underline;
+
+    font-size: 100px;
+
+    font-style: bold;
+    color:rgb(255, 0, 208);
+
+    /* padding: 50px; */
+    /* margin: 50px; */
+}
+
+#tiles{
+    text-decoration: underline;
+    font-style: italic;
+    color:coral;
+}
+
+#puzzle-blocks li {
+    display: block;
+    height: 3rem;
+    width: 3rem;
+}
+
+/* button{
+    font-family: 'PPNeueBit-Bold';
+    color:rgb(82, 82, 82);
+    background-color: rgb(178, 215, 170);
+
+    padding: 0.8rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 10px;
+
+
+
+} */
+
+#game-instructions{
+    color: darkslateblue;
+    font-size: 24px;
+
+}
+
+
+.choose-puzzle-button{
+    padding: 0.2rem;
+    margin: 1rem;
+    color:rgb(82, 82, 82);
+    background-color:rgb(255, 255, 255);
+    border-radius: 5px;
+
+    /* font-family: 'PPNeueBit-Bold';
+    color:rgb(82, 82, 82);
+    background-color: rgb(178, 215, 170);
+
+    padding: 0.8rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 10px; */
+}
+
+.choose-puzzle-button:hover{
+    padding: 0.2rem;
+    margin: 1rem;
+    color:rgb(82, 82, 82);
+    background-color:rgb(168, 47, 148);
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* font-family: 'PPNeueBit-Bold';
+    color:rgb(82, 82, 82);
+    background-color: rgb(178, 215, 170);
+
+    padding: 0.8rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 10px; */
+}
+
+#continue-banner-btn{
+    font-family: 'PPNeueBit-Bold';
+    color:rgb(40, 40, 40);
+    background-color: rgb(255, 255, 255);
+
+    padding: 0.8rem;
+    margin: 1rem;
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 20px;
+
+}
+
+#continue-banner-btn:hover{
+    font-family: 'PPNeueBit-Bold';
+    color:rgb(255, 255, 255);
+    background-color: rgb(106, 80, 233);
+
+    padding: 0.8rem;
+    margin: 1rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#popup-banner{
+    position: absolute;
+    top: 0px;
+    left: 0px; 
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+
+    background-color: rgb(135, 175, 212);
+    z-index: 2;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#popup-banner .active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#puzzle-options li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#puzzle-options{
+    display: flex;
+    flex-wrap: wrap;
+
+    /* height: 240px; */
+    display: flex;
+    /* background-color: black; */
+
+    /* justify-content: space-between; */
+
+    /* width: 40%; */
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* #puzzle-options li {
+    display: flex;
+    height: auto;
+} */
+
+#puzzle-options li img {
+    display: flex;
+    height: 100px;
+    width: auto;
+}
+
+
+#puzzle-blocks li {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 1rem;
+    background-color: black;
+}
+
+#puzzle-blocks img {
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 1rem;
+    
+}
+
+#puzzle-container {
+    display: flex;
+    height: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.tile.P {
+    background-color: #d4d4d4;
+    background-image: url("imgs/1/1_0.jpg");
+    opacity: 0.3;
+
+    /* box-shadow: inset 0 0 20px rgba(0,0,0,0.4); */
+
+    /* box-shadow:
+    inset 0 0 10px rgba(0,0,0,0.6),
+    inset 0 0 30px rgba(0,0,0,0.3);  */
+
+    box-shadow:
+    inset 0 3px 6px rgba(0, 0, 0, 0.6),
+    inset 0 -6px 12px rgba(0,0,0,0.4), 
+    inset 6px 0 12px rgba(0,0,0,0.4),       
+    inset -6px 0 12px rgba(0,0,0,0.4); 
+    
+
+    /* border: 10px inset rgba(51,153,0,0.65); */
+    /* border-style: inset; */
+    /* border-color: white; 
+    border-width: 0.2rem; */
+
+    /* outline: 10px solid black;
+    outline-offset: -10px; */ 
+}
+
+/* .tile.A {
+    background-image: url("imgs/1/1_1.jpg");
+}
+
+.tile.B {
+    background-image: url("imgs/1/1_2.jpg");
+}
+
+.tile.C {
+    background-image: url("imgs/1/1_3.jpg");
+}
+
+.tile.D {
+    background-image: url("imgs/1/1_4.jpg");
+}
+
+.tile.E {
+    background-image: url("imgs/1/1_5.jpg");
+}
+
+.tile.F {
+    background-image: url("imgs/1/1_6.jpg");
+}
+
+.tile.G {
+    background-image: url("imgs/1/1_7.jpg");
+}
+
+.tile.H {
+    background-image: url("imgs/1/1_8.jpg");
+} */
+
+
+
+
+
+/* First Puzzle */
+#puzzle-container[data-puzzle="1"] .tile.P {
+     background-image: url("imgs/1/1_0.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.A {
+     background-image: url("imgs/1/1_1.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.B {
+     background-image: url("imgs/1/1_2.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.C {
+     background-image: url("imgs/1/1_3.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.D {
+     background-image: url("imgs/1/1_4.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.E {
+     background-image: url("imgs/1/1_5.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.F {
+     background-image: url("imgs/1/1_6.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.G {
+     background-image: url("imgs/1/1_7.jpg");
+}
+
+#puzzle-container[data-puzzle="1"] .tile.H {
+     background-image: url("imgs/1/1_8.jpg");
+}
+
+
+/* Second Puzzle */
+#puzzle-container[data-puzzle="2"] .tile.P {
+     background-image: url("imgs/2/2_0.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.A {
+     background-image: url("imgs/2/2_1.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.B {
+     background-image: url("imgs/2/2_2.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.C {
+     background-image: url("imgs/2/2_3.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.D {
+     background-image: url("imgs/2/2_4.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.E {
+     background-image: url("imgs/2/2_5.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.F {
+     background-image: url("imgs/2/2_6.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.G {
+     background-image: url("imgs/2/2_7.jpg");
+}
+
+#puzzle-container[data-puzzle="2"] .tile.H {
+     background-image: url("imgs/2/2_8.jpg");
+}
+
+
+/* Third Puzzle */
+#puzzle-container[data-puzzle="3"] .tile.P {
+     background-image: url("imgs/3/3_0.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.A {
+     background-image: url("imgs/3/3_1.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.B {
+     background-image: url("imgs/3/3_2.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.C {
+     background-image: url("imgs/3/3_3.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.D {
+     background-image: url("imgs/3/3_4.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.E {
+     background-image: url("imgs/3/3_5.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.F {
+     background-image: url("imgs/3/3_6.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.G {
+     background-image: url("imgs/3/3_7.jpg");
+}
+
+#puzzle-container[data-puzzle="3"] .tile.H {
+     background-image: url("imgs/3/3_8.jpg");
+}
+
+
+
+/* Fourth Puzzle */
+#puzzle-container[data-puzzle="4"] .tile.P {
+     background-image: url("imgs/4/4_0.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.A {
+     background-image: url("imgs/4/4_1.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.B {
+     background-image: url("imgs/4/4_2.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.C {
+     background-image: url("imgs/4/4_3.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.D {
+     background-image: url("imgs/4/4_4.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.E {
+     background-image: url("imgs/4/4_5.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.F {
+     background-image: url("imgs/4/4_6.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.G {
+     background-image: url("imgs/4/4_7.jpg");
+}
+
+#puzzle-container[data-puzzle="4"] .tile.H {
+     background-image: url("imgs/4/4_8.jpg");
+}
+
+
+/* for 3x3 puzzles
+.tile {
+    background-image: url("imgs/1/1_9.jpg");
+}
+
+.tile.P {
+    background-position: 0% 0%;
+}
+
+.tile.A {
+    background-position: calc(100% / 3) 0%;
+}
+
+.tile.B {
+    background-position: calc(100% / 3 * 2)  0%;
+}
+
+.tile.C {
+    background-position: 0% calc(100% / 3);
+}
+
+.tile.D {
+    background-position: calc(100% / 3) calc(100% / 3 * 2);
+} */
+
+
+.tile {
+    width: calc(100% / 3);
+    height: calc(100% / 3);
+    /* background-color: burlywood; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+
+    box-shadow:
+        inset 0 0 10px rgba(108, 108, 108, 0.6),
+        inset 0 0 30px rgba(0,0,0,0.3);
+
+    transition: transform 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 500px) {
+
+	/* CSS Selectors and related style for tablet */
+	
+	/* #puzzle-container {
+    display: flex;
+    height: 100vw;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+#puzzle-container {
+    /* width: 100%; */
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+}
+	
+}
+
+@media only screen and (min-width: 600px) {
+
+	/* CSS Selectors and related style for tablet */
+	
+
+
+
+	
+}
