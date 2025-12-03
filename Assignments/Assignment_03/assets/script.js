@@ -3,7 +3,7 @@
 
 
 //declaring API variables
-const API_KEY = ""; // <--- PASTE YOUR KEY HERE
+const API_KEY = "";
 const API_URL = `https://www.rijksmuseum.nl/api/en/collection?key=${API_KEY}&format=json&ps=100&type=painting&imgonly=True`;
 
 //The array that gives you the correct painting
