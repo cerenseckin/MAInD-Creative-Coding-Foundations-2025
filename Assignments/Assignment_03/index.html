@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "assets/style.css">
+    <script src = "assets/script.js" defer></script>
+
+    <title>Rijksmuseum : Restore the Artworks</title>
+
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <button class = "back-btn " id="header-back-btn">
+                <img src="assets/imgs/arrow_back_ios_48dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="Rijksmuseum">
+            </button>
+            <h1 id="menu-header">RIJKSMUSEUM</h1>
+        </div>
+
+        <p id="game-instructions">Use the arrow keys to move the <span id="tiles">tiles</span> (not the empty space😊) and complete the puzzle!</p>
+        <p id="score-container">Moves: <span id="moves">0</span></p>
+    </header>
+
+    <main>
+        <div id="menu-screen">
+            <div id="menu-content">
+                <h1 id="puzzle-page-header">RIJKSMUSEUM</h1>
+                <h1 id="puzzle-page-header-puzzle">Puzzle</h1>
+                <h2>Restore the artworks!</h2>
+                <button id="start-game-btn">PLAY</button>
+            </div>
+        </div>
+
+        <div class="card-puzzle-layout">
+            <section id="artwork-card">
+                <details id="artwork-details-wrap">
+
+                <summary id="artwork-summary-title">
+                <span class="card-title">Artwork Details (Tap to Expand)</span>
+                </summary>
+
+
+                <img id="artwork-reference-image" src="" alt="Artwork Reference Image">
+    
+                <h3><span class= card-title>Title : </span><span id="artwork-title"></span> </h3>
+                <h3><span class= card-title>Artist : </span><span id="artist-name"></span></h3>
+                <h3><span class= card-title>Date : </span><span id="artwork-date"></span></h3>
+    
+                <h3><span class= card-title>Description : </span><span id="description"></span></h3>
+
+                </details>
+
+
+            </section>
+    
+            <ul id="puzzle-container"></ul>
+        </div>
+
+        <div id="overlay">
+            <div id="win-message">
+                <p>You've restored the artwork!</p>
+                <button id="back-to-menu-btn">Menu</button>
+                <button id="continue-play-btn">Continue playing</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
