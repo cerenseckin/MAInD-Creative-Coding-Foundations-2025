@@ -2,8 +2,6 @@
 
 ## Brief
 
-# Brief
-
 Upgrade the **Assignment 02** by adding the use of data coming from an external web API. For example, fetch contents (audio, images, video, text, metadata) from online archives, AI generated contents (chatGPT API), data (weather, realtime traffic data, environmental data).
 
 The application **must** have those requirements:
